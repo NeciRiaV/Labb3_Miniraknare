@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labb3_Miniräknare", "Labb3_Miniräknare\Labb3_Miniräknare.csproj", "{8F9EE3B1-141A-4ECA-BBAB-E6CCCC6CFB5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Labb3_MiniräknareXUnitTest", "Labb3_MiniräknareXUnitTest\Labb3_MiniräknareXUnitTest.csproj", "{8A1BF137-22ED-40A3-A4B2-EB3C7199EEE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8F9EE3B1-141A-4ECA-BBAB-E6CCCC6CFB5A} = {8F9EE3B1-141A-4ECA-BBAB-E6CCCC6CFB5A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F9EE3B1-141A-4ECA-BBAB-E6CCCC6CFB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F9EE3B1-141A-4ECA-BBAB-E6CCCC6CFB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F9EE3B1-141A-4ECA-BBAB-E6CCCC6CFB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F9EE3B1-141A-4ECA-BBAB-E6CCCC6CFB5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A1BF137-22ED-40A3-A4B2-EB3C7199EEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1BF137-22ED-40A3-A4B2-EB3C7199EEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1BF137-22ED-40A3-A4B2-EB3C7199EEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1BF137-22ED-40A3-A4B2-EB3C7199EEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4A9EAFE-E86B-4E66-9C3D-CF34718443E9}
+	EndGlobalSection
+EndGlobal
