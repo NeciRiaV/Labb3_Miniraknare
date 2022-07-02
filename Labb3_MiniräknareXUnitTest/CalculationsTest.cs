@@ -69,6 +69,20 @@ namespace Labb3_MiniräknareXUnitTest
 
             Assert.Equal(actual, expected);
         }
+        [Theory]
+        [InlineData(5, 0, 5, false)]
+        [InlineData(0, 5, 0, true)]
+        [InlineData(5, 0.25, 20, true)]
+        public void Test_Division_With_0(double num1, double num2, double result, bool isItTrue)
+        {
+            var calc = new Calculations();
+
+            var isValid = calc.Division(num1, num2);
+            var actual = isValid == result;
+
+            Assert.Equal(isItTrue, actual);
+        }
+
 
         //MULTIPLIKATION
         [Fact]
