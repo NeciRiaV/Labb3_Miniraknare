@@ -25,11 +25,73 @@ namespace Labb3_MiniräknareXUnitTest
         }
 
         //SUBTRAKTION
+        [Fact]
+        public void Test_Subtraction_Positive_Result()
+        {
+            var posNum = new Calculations();
+
+            var actual = posNum.Subtraction(4, 2);
+            var expected = 2;
+
+            Assert.Equal(actual, expected);
+        }
+        [Fact]
+        public void Test_Subtraction_Negative_Result()
+        {
+            var negNum = new Calculations();
+
+            var actual = negNum.Subtraction(-10, 5);
+            var expected = -15;
+
+            Assert.Equal(actual, expected);
+        }
 
 
         //DIVISION
 
+        [Fact]
+        public void Test_Division_Positive_Result()
+        {
+            var posNum = new Calculations();
+
+            var actual = posNum.Division(50, 2);
+            var expected = 25;
+
+            Assert.Equal(actual, expected);
+        }
+        [Fact]
+        public void Test_Division_Negative_Result()
+        {
+            var negNum = new Calculations();
+
+            var actual = negNum.Division(-20, 2);
+            var expected = -10;
+
+            Assert.Equal(actual, expected);
+        }
 
         //MULTIPLIKATION
+        [Fact]
+        public void Test_Multiplication_Positive_Result()
+        {
+            var num = new Calculations();
+
+            var actual = num.Multiplication(3, 3);
+            var expected = 9;
+
+            Assert.Equal(actual, expected);
+        }
+
+        [Fact]
+        public void Test_Multiplication_Negative_Result()
+        {
+            var negNum = new Calculations();
+
+            var actual = negNum.Multiplication(-3, 3);
+            var expected = -9;
+
+            Assert.Equal(actual, expected);
+        }
+
     }
 }
