@@ -14,10 +14,6 @@ namespace Labb3_Miniräknare
         {
 
         }
-        //public Calculations(double _res)
-        //{
-        //    res = _res;
-        //}
 
 
         public List<string> ListOfCalculations = new List<string>();

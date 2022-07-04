@@ -23,6 +23,7 @@ namespace Labb3_Miniräknare
                         break;
                     case 2:
                         c.ShowCalculations();
+                        Console.ReadLine();
                         MenuController();
                         break;
                     case 3:
@@ -47,16 +48,13 @@ namespace Labb3_Miniräknare
             Console.WriteLine();
             double number1;
             double number2;
-            //Console.Write("Siffra: ");
-            //double number1 = Convert.ToDouble(Console.ReadLine());
-            //Console.Write("Siffra: ");
-            //double number2 = Convert.ToDouble(Console.ReadLine());
+
             switch (answer)
             {
                 case "+":
-                    Console.Write("Siffra: ");
+                    Console.Write("Term: ");
                     number1 = Convert.ToDouble(Console.ReadLine());
-                    Console.Write("Siffra: ");
+                    Console.Write("Term: ");
                     number2 = Convert.ToDouble(Console.ReadLine());
                     c.Addition(number1, number2);
                     Console.ReadLine();
@@ -65,9 +63,9 @@ namespace Labb3_Miniräknare
                     break;
 
                 case "-":
-                    Console.Write("Siffra: ");
+                    Console.Write("Term: ");
                     number1 = Convert.ToDouble(Console.ReadLine());
-                    Console.Write("Siffra: ");
+                    Console.Write("Term: ");
                     number2 = Convert.ToDouble(Console.ReadLine());
                     c.Subtraction(number1, number2);
                     Console.ReadLine();
@@ -76,9 +74,9 @@ namespace Labb3_Miniräknare
                     break;
 
                 case "x":
-                    Console.Write("Siffra: ");
+                    Console.Write("Faktor: ");
                     number1 = Convert.ToDouble(Console.ReadLine());
-                    Console.Write("Siffra: ");
+                    Console.Write("Faktor: ");
                     number2 = Convert.ToDouble(Console.ReadLine());
                     c.Multiplication(number1, number2);
                     Console.ReadLine();
@@ -87,10 +85,15 @@ namespace Labb3_Miniräknare
                     break;
 
                 case "/":
-                    Console.Write("Siffra: ");
+                    Console.Write("Täljare: ");
                     number1 = Convert.ToDouble(Console.ReadLine());
-                    Console.Write("Siffra: ");
+                    Console.Write("Nämnare: ");
                     number2 = Convert.ToDouble(Console.ReadLine());
+                    if (number2 == 0)
+                    {
+                        Console.WriteLine("Fel! 0 kan inte användas som nämnare! \nVänligen välj ny siffra: ");
+                        number2 = Convert.ToDouble(Console.ReadLine());
+                    }
                     c.Division(number1, number2);
                     Console.ReadLine();
                     Console.Clear();
